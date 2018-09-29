@@ -82,11 +82,11 @@ Java 堆划分出了很多空间，例如新生代、老年代、Eden 空间等�
 
 #### 对象的创建
 
-下面两张图介绍了对象创建的流程，首先将去检查这个指令的参数是否能在常量池中定位到一个类的符号引用，并且**检查这个符号引用代表的类是否已被加载、解析和初始化过**。没有过的话才会执行到相应的类加载过程。
+下面两张图介绍了对象创建的流程，首先将去检查这个指令的参数是否能在常量池中定位到一个类的符号引用，并且**检查这个符号引用代表的类是否已被加载、解析和初始化过**。没有过的话才会执行到相应的类加载过程。类加载检查通过后，接下来虚拟机将为新生对象分配内存。对象所需内存的大小在类加载完成后便可完全确定
 
 <figure class="half">
     <a hrep="http://otbemm1i1.bkt.clouddn.com/blog/180915/596E2G67AD.png?imageslim"></a><img src="http://otbemm1i1.bkt.clouddn.com/blog/180915/596E2G67AD.png?imageslim" width="250" height="400" align=center>
-    <a hrep="http://otbemm1i1.bkt.clouddn.com/blog/180915/h7894DKjGK.png?imageslim"><img src="http://otbemm1i1.bkt.clouddn.com/blog/180915/h7894DKjGK.png?imageslim" width="188" height="400" align=center>
+    <a hrep="http://otbemm1i1.bkt.clouddn.com/blog/180915/h7894DKjGK.png?imageslim"><img src="http://otbemm1i1.bkt.clouddn.com/blog/180915/h7894DKjGK.png?imageslim" width="160" height="400" align=center>
 </figure>
 
 
